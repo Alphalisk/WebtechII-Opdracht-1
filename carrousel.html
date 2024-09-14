@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Formulier</title>
+        <meta charset="utf-8">
+        
+        <!-- Mobile first, proper rendering and touch controls -->
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        
+        <!-- Externe link naar Bootstrap Versie 5 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Link naar eigen CSS-->
+        <link rel="stylesheet" href="static/css/main.css">
+
+    </head>
+    <body>
+
+        <!-- Menubalk -->
+        <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+            <div class="container-fluid">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="static/logo.avif" alt="Hanze logo" style="width:40px;" class="rounded-pill"> 
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cursus.html">Hanze Tutorials</a>
+                        </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="basis.html">Basis</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menubalk.html">Menubalk</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="invoegen_afbeelding.html">Invoegen afbeeldingen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="carrousel.html">Carrousel</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Welkomst tekst op homepage -->
+        <div class="container-sm p-5 my-5 border">
+            <div class="row text-center">
+                <div class="col">
+                    <div class="container">
+                        <h1>Carrousel</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="container">
+                        <h4>Stap 1</h4>
+                        <p>
+                            Het maken van een carrousel vergt relatief meer code dan de voorgaande onderwerpen. De code wordt gemaakt in de body op de gewenste plek. Het is daarbij handig om de carousel in een container te plaatsen. Enerzijds is het daarmee makkelijk te herplaatsen, anderzijds is het daarmee makkelijker om de grootte van de afbeeldingen te wijzigen en fitten.<br>
+                            Stap 1 is dus het maken van een container. 
+                        </p>
+
+                        <h4>Stap 2</h4>
+                        <p>
+                            Zorg ervoor dat er meerdere plaatjes voor de carrousel toegankelijk zijn. Voor het voorbeeld zijn er 3 afbeeldingen opgeslagen in de map <i>static</i> genaamd: vos.jpg, muis.jpg en duif.jpg. Deze zijn willekeurig van het internet gehaald en kunnen vervangen worden voor andere afbeeldingen.
+                        </p>
+
+                        <h4>Stap 3</h4>
+                        <p>
+                            Onderstaand is een codeblock toegevoegd wat aan een site toegevoegd kan worden. Hiermee wordt een standaard carousel aangemaakt. Onderaan de pagina staat nadere informatie over gebruikte attributen en opties.
+                        </p>
+
+                        <div class="row">
+                            <div class="col text-center">
+                                <lead>Code</lead>
+                            </div>
+                        </div>
+                        
+                        <pre><code>
+                            &lt;div class="container"&gt;
+                                &lt;div class="row"&gt;
+                                    &lt;div class="col-6"&gt;
+                                        &lt;div id="demo" class="carousel slide" data-bs-ride="carousel"&gt;
+                    
+                                            <!-- Indicators/dots -->
+                                            &lt;div class="carousel-indicators"&gt;
+                                                &lt;button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"&gt;&lt;/button&gt;
+                                                &lt;button type="button" data-bs-target="#demo" data-bs-slide-to="1"&gt;&lt;/button&gt;
+                                                &lt;button type="button" data-bs-target="#demo" data-bs-slide-to="2"&gt;&lt;/button&gt;
+                                            &lt;/div&gt;
+                                        
+                                            <!-- De carousel zelf -->
+                                            &lt;div class="carousel-inner"&gt;
+                                                &lt;div class="carousel-item active"&gt;
+                                                    &lt;img src="static/Vos.jpg" alt="plaatje van vos" class="w-100 d-block"&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class="carousel-item"&gt;
+                                                    &lt;img src="static/duif.jpg" alt="Plaatje van duif" class="w-100 d-block"&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class="carousel-item"&gt;
+                                                    &lt;img src="static/muis.jpg" alt="Plaatje van muis" class="w-100 d-block"&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                        
+                                            <!-- Link en rechts pijltjes -->
+                                            &lt;button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev"&gt;
+                                                &lt;span class="carousel-control-prev-icon"&gt;&lt;/span&gt;
+                                            &lt;/button&gt;
+                                            &lt;button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next"&gt;
+                                                &lt;span class="carousel-control-next-icon"&gt;&lt;/span&gt;
+                                            &lt;/button&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        </code></pre>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center">
+                    <lead>Resultaat</lead>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3"></div> <!-- voor de correcte uitlijning van de volgende kolom -->
+                <div class="col-6 text-center">
+                    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+                        <!-- Indicators/dots -->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                        </div>
+                    
+                        <!-- De carousel zelf -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="static/Vos.jpg" alt="plaatje van vos" class="w-100 d-block">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="static/duif.jpg" alt="Plaatje van duif" class="w-100 d-block">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="static/muis.jpg" alt="Plaatje van muis" class="w-100 d-block">
+                            </div>
+                        </div>
+                    
+                        <!-- Link en rechts pijltjes -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <br>
+            <h4>Nadere uitleg</h4>
+            <p>
+                Om een carrousel te maken gebruikt bootstrap de attributen <i>carousel slide</i>, <i>carousel-indicators</i>, <i>carousel-inner</i>, <i>carousel-item</i>, <i>carousel-control-prev</i> en <i>carousel-control-next</i>. <br>
+                <ul>
+                    <li>carousel slide: Dit is de optie om de gehele carousel te maken waarbinnen de items zich bevinden.</li>
+                    <li>carousel-indicators: Hiermee worden de knoppen gemaakt om te zien waar de carousel zich bevind en snel te navigeren.</li>
+                    <li>carousel-inner: Dit is de daadwerkelijke carousel waar de link naar de afbeeldingen zijn verwerkt. Er is altijd 1 actief.</li>
+                    <li>carousel-item: Dit is een afbeelding van de carousel</li>
+                    <li>carousel-control-prev/next: Dit zijn de knoppen voor de pijltjes om te navigeren binnen de carrousel.</li>
+                </ul>
+            </p>
+            
+            <p>
+                <br>
+                Uiteraard zijn er meer opties beschikbaar met de carrousel. Maar die vallen buiten de scope van deze cursus.
+            </p>
+        </div>
+        
+
+        <!-- Einde van pagina footer --> 
+        <footer class="text-center text-lg-start bg-light text-muted">
+            <!-- Copyright -->
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2024 Copyright:
+            <a class="text-reset fw-bold" href="#">Richard Mank</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+
+    </body>
+</html>

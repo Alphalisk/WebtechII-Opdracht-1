@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Formulier</title>
+        <meta charset="utf-8">
+        
+        <!-- Mobile first, proper rendering and touch controls -->
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        
+        <!-- Externe link naar Bootstrap Versie 5 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Link naar eigen CSS-->
+        <link rel="stylesheet" href="static/css/main.css">
+
+    </head>
+    <body>
+
+        <!-- Menubalk -->
+        <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+            <div class="container-fluid">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="static/logo.avif" alt="Hanze logo" style="width:40px;" class="rounded-pill"> 
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cursus.html">Hanze Tutorials</a>
+                        </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="basis.html">Basis</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menubalk.html">Menubalk</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="invoegen_afbeelding.html">Invoegen afbeeldingen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="carrousel.html">Carrousel</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container-sm p-5 my-5 border">
+            <div class="row text-center">
+                <div class="col">
+                    <div class="container">
+                        <h1>Basis</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="container">
+                        
+                        <h4>Stap 1</h4>
+                        <p>
+                            Om een website te maken met bootstrap features is het allereerst handig om over een basis html pagina te beschikken.
+                            Binnen de cursus wordt ervan uit gegaan dat de cursist basiskennis in html en css beheerst.<br>
+                            Open een teksteditor als notepad, op de computer en sla de volgende code op als een .html bestand. Dit is de code van een lege html pagina met als titel 'demo' en een paragraaf binnen een container met de tekst <i>Hello world</i>. Bootstrap werkt erg goed met containers om de pagina in stukken te delen en tekst uit te lijnen.
+                        </p>
+
+                        <div class="row">
+                            <div class="col text-center">
+                                <lead>Code</lead>
+                            </div>
+                        </div>
+                       
+                        <pre><code>
+                            &lt;!DOCTYPE html&gt;
+                            &lt;html lang="en"&gt;
+                                &lt;head&gt;
+                                    &lt;title&gt;Demo&lt/title&gt;
+                                    &lt;meta charset="utf-8"&gt;
+                                &lt;/head&gt;
+                                &lt;body&gt;
+                                    &lt;div class="container"&gt;
+                                        &lt;p&gt;
+                                            Hello world
+                                        &lt;/p&gt;
+                                    &lt;/div&gt;
+                                &lt;/body&gt;
+                            &lt;/html&gt;
+                        </pre></code>
+                            
+                        <div class="row">
+                            <div class="col text-center">
+                                <lead>Resultaat</lead>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col text-center">
+                                <br>
+                                <img src="static/basis_zonderbootstrap.png" alt="pagina zonder bootstrap" class="w-50">
+                            </div>
+                        </div>
+
+                        <br>
+                        <h4>Stap 2</h4>
+                        <p>
+                            Op dit moment wordt er nog geen gebruik gemaakt van bootstrap. Door de volgende lijnen met code toe te voegen aan de header van het document wordt er een link gemaakt met bootstrap versie 5.
+                        </p>
+                        <div class="row">
+                            <div class="col text-center">
+                                <lead>Code</lead>
+                            </div>
+                        </div>
+                        <pre><code>
+                            &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"&gt;
+                            &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+                        </pre></code>
+                        <div class="row">
+                            <div class="col text-center">
+                                <lead>Resultaat</lead>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col text-center">
+                                <br>
+                                <img src="static/basis_metbootstrap.png" alt="pagina zonder bootstrap" class="w-50">
+                            </div>
+                        </div>
+                        <br>
+                        <p>
+                            Het resultaat is subtiel, maar te zien is dat het lettertype en de uitlijning van de tekst <i>Hello world</i> met bootstrap anders is geworden dan bij het eerste resultaat.
+                            Door gebruik te maken van bootstrap zal de opmaak van de pagina gestandaardiseerd worden.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Einde van pagina footer --> 
+        <footer class="text-center text-lg-start bg-light text-muted">
+            <!-- Copyright -->
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2024 Copyright:
+            <a class="text-reset fw-bold" href="#">Richard Mank</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+      
+    </body>
+</html>
